@@ -1,0 +1,555 @@
+/* 1 REM = 10PX */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #E8E9ED;
+}
+
+/* PALETA DE COLORES
+#3E2F26 (Café oscuro) - #9FA7BF (Gris) - #E8E9ED (Hueso) - #7E6F68 (café clarito) - #A59C9D (café más clarito) - #4d99aa (azul celeste ocurito tirando a humilde)*/
+
+/* INICIO HEADER PRINCIPAL, ES EL PADRE DE TODOS. */
+header{
+    /* border: 3px solid yellow; */
+
+    position: fixed;
+    top: 0;
+    background-color: #3E2F26;
+    height: auto;
+    width: 100%;
+    z-index: 5;
+}
+
+/* CONTENEDOR DE TODO LO QUE HAY DENTRO DEL NAVBAR */
+.ContenedorNavbar{
+    /* border: 3px solid darkmagenta; */
+    display: flex;
+}
+
+/* LOGO WOODEN HOUSE EN EL NAVBAR */
+.logoNavbar{
+    /* border: 3px solid red; */
+
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    width: 30%;
+    height: 95%;
+    margin-top: .3%;
+}
+
+/* NAV, PADRE DE LOS NAVLINKS */
+.navLinks{
+    /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+/* DISEÑOS A LOS NAVLINKS ¡HIJOS! (NOSOTROS, CONSTRUCCIÓN, PROYECTOS Y PRECIOS) */
+.navLinks a{
+    /* border: 3px solid blue; */
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #E8E9ED;
+}
+
+.navLinks a:hover{
+    background-color: #E8E9ED;
+    border-radius: 4rem;
+    color: #3E2F26;
+}
+/* FIN NAVBAR */
+
+/* INICIO PRIMERA SECCIÓN - HOMEPAGE*/
+/* SLIDER */
+
+.slider-frame{
+    position: absolute;
+    top: 17%;
+    left: 38%;
+    width: 60%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0%{
+        margin-left: 0%;
+    }
+    20%{
+        margin-left: 0%;
+    }
+
+    25%{
+        margin-left: -100%;
+    }
+    45%{
+        margin-left: -100%;
+    }
+
+    50%{
+        margin-left: -200%;
+    }
+    70%{
+        margin-left: -200%;
+    }
+
+    75%{
+        margin-left: -300%;
+    }
+    95%{
+        margin-left: -300%;
+    }
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+}
+
+/* ESLOGAN */
+
+.title{
+    /* background-color: #484d5c; */
+    border-radius: .5rem;
+    margin-left: 1.5rem;
+    margin-top: 25rem;
+    width: 35%;
+    height: auto;
+}
+
+.title h1{
+    /* border: 3px solid #3E2F26; */
+    font-size: 400%;
+    margin-left: 1rem;
+    margin-top: 20%;
+    color: #484d5c;
+}
+
+.title h1 span{
+    text-align: center;
+}
+
+/* FIN PRIMERA SECCION - HOMEPAGE */
+
+/* SEGUNDA SECCIÓN - NOSOTROS */
+
+#Nosotros{
+    background-color: #7f87a0;
+    margin-top: 22%;
+    width: 100%;
+    height: auto;
+}
+
+.contenidoNosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+/* IMAGEN PERSONAL NOSOTROS */
+.contenidoNosotros img{
+    /* margin-left: 15rem; */
+    width: 40%;
+    height: auto;
+}
+
+/* TEXTO SECCIÓN NOSOTROS */
+.textoNosotros{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid red; */
+}
+
+.contenidoTextoNosotros{
+    /* border: 3px solid green; */
+    padding: 5%;
+}
+
+.textoNosotros h2{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 3%;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 3%;
+      width: 100%;
+    }
+  }
+
+.textoNosotros p{
+    text-align: start;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 6%;
+      width: 100%;
+    }
+  }
+/* FIN SEGUNDA SECCIÓN - NOSOTROS */
+
+/* INICIO TERCERA SECCIÓN - CONSTRUCCIÓN */
+
+.cardsConstruccion{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin: 15rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    height: auto;
+    width: auto;
+    /* border: 3px solid red; */
+}
+
+/* .cardsConstruccion h2{
+    font-size: 2rem;
+} */
+
+#Construccion h2{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.subtitulo h2{
+    font-size: 4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+    height: auto;
+    /* border: 3px solid #7f87a0; */
+    background-color: #7f87a0;
+    margin: 4rem;
+    border-radius: 2rem;
+
+    /* background-color: rgb(126, 134, 160, .3); */
+    /* border: 2px solid rgb(63, 48, 39, .7); */
+    /* border-radius: 1rem; */
+}
+
+.padreCards{
+    display: flex;
+}
+
+.card p{
+    margin-top: 1rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-decoration: none;
+    background-color: #3E2F26;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: #E8E9ED;
+    text-align: center;
+}
+
+
+.card a:hover{
+    /* color: #3E2F26; */
+    background-color: #4d4038;
+}
+
+/* FIN SECCIÓN CONSTRUCCIÓN */
+
+/* INICIO SECCIÓN PROYECTOS */
+
+#Proyectos{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    /* border: 30px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(27, 27, 29);
+    opacity: 0.7;
+    mix-blend-mode:overlay;
+}
+
+.goMercado{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.contenidoTextualProyectos{
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    padding-top: 15%;
+    height: auto;
+    width: auto;
+    /* border: 3px solid red; */
+}
+
+.contenidoTextualProyectos h2{
+    color: #E8E9ED;
+    font-size: 10rem;
+}
+
+.contenidoTextualProyectos p{
+    color: #E8E9ED;
+}
+
+.contenidoTextualProyectos a{
+    text-decoration: none;
+    color: #E8E9ED;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 4rem;
+    background-color: #E8E9ED;
+    color: #000000;
+}
+
+.contenidoTextualProyectos a:hover{
+    background-color: #dbdbdb;
+}
+/* FIN SECCIÓN PROYECTOS */
+
+/* INICIO SECCIÓN CONTACO */
+
+#Contacto{
+    background-color: #7f87a0;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.contact{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    color: #E8E9ED;
+}
+
+form{
+    margin: 0;
+    width: 70rem;
+    padding: 1rem;
+    margin-left: 25%;
+    border: 3px solid #E8E9ED;
+    border-radius: 3rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 1px;
+  }
+
+form li {
+    margin-top: 2rem;
+  }
+
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 125px;
+    text-align: start;
+  }
+
+form input{
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 3px solid #E8E9ED;
+    background-color: #E8E9ED;
+    font-family: "Poppins", sans-serif;
+
+}
+
+textarea{
+    border-radius: 1rem;
+    border: 3px solid #E8E9ED;
+    background-color: #E8E9ED;
+    width: 30rem;
+    padding: 1rem;
+    vertical-align: top;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    text-align: center;
+    width: 30rem;
+    padding: .5rem;
+    background-color: #3E2F26;
+    border: 3px solid #3E2F26;
+    color: #E8E9ED;
+    border-radius: 1rem;
+}
+
+button:hover{
+
+    background-color: #E8E9ED;
+    border: 3px solid #E8E9ED;
+    color: #3E2F26;
+}
+
+/* FIN SECCIÓN CONTACTO */
+
+/* INICIO SECCIÓN FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #16110f;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.secOne{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.boletin{
+    display: flex;
+    flex-direction: column;
+    color: #E8E9ED;
+    align-items: start;
+    padding: 5%;
+}
+
+.boletin label{
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.boletin input{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background-color: #E8E9ED;
+    border: 3px solid #E8E9ED;
+}
+
+.suscribirse{
+    display: flex;
+}
+
+.suscribirse a{
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-left: -2rem;
+    background-color: #E8E9ED;
+    border: 3px solid #E8E9ED;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.fundadores{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin-left: 40%;
+    color: #E8E9ED;
+}
+
+.fundadores h3{
+    margin-bottom: 1rem;
+}
+
+.fundadores p{
+    margin-bottom: .4rem;
+}
+
+hr{
+    opacity: 0.2;
+}
+
+.copy{
+    text-align: center;
+    color: #E8E9ED;
+}
+
+.copy p{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* FIN SECCIÓN FOOTER */

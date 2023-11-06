@@ -1,0 +1,26 @@
+COMPETENCIA HTML - CSS
+
+Jueves 26 Oct - Entrega del titulo (tema) 
+¿Qué? ¿Cómo? ¿Para quién? ¿Para qué?
+
+Lunes 30 Oct - Levantamiento de requerimientos (simulación de entrevista para ingeniería de requisitos) - Diseño, Boceto - Mack up. 
+
+Ej: Vamos dónde el cliente y hacemos un cuestionario. Vamos a vender una página al cliente ¿Qué quiere el cliente que hagamos?; Para después definir qué se va a hacer y qué no se va a hacer.
+
+Viernes 3 Nov - Entrega de avances
+
+Martes 7 Nov - Sustentanción en inglés
+
+* Entregar 2 vídeos, uno de la sustentación del código y uno de la parte visual.
+
+
+A INCLUIR EN EL PROYECTO: 
+* Planeación
+* Diseño
+* -ENTREGABLES:
+	* Doc. de levantamiento de requerimientos
+
+* Cronograma
+* Videitos
+
+¡VERSIÓN DEL SITIO EN ESPAÑOL Y VERSIÓN DEL SITIO EN INGLÉS!.
